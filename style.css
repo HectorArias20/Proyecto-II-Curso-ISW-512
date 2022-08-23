@@ -1,0 +1,674 @@
+    body {
+        font-size: 12px;
+        color: #606060;
+        font-family: light;
+    }
+    
+    h1 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    /* ------ Variables css --------- */
+    
+     :root {
+        --position: absolute;
+        --color: gray;
+    }
+    /* ------menu---------- */
+    
+    .header {
+        min-height: 60vh;
+        width: 100%;
+        background-color: whitesmoke;
+        position: relative;
+        background-size: cover;
+        border-bottom: 1px solid lightblue;
+    }
+    
+    nav {
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav img {
+        width: 150px;
+    }
+    
+    .nav-links {
+        flex: 1;
+        text-align: right;
+    }
+    
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .nav-links ul li a {
+        color: var(--color);
+        text-decoration: none;
+        padding: 0px 20px;
+        border-right: 1px solid gray;
+    }
+    /* --------fin menu--------------- */
+    /* ---- Pagina de Inicio --------*/
+    
+    .text-box1 {
+        width: 100%;
+        position: var(--position);
+        top: 60%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    
+    .text-box2 {
+        width: 100%;
+        position: var(--position);
+        text-align: center;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .text-box3 {
+        width: 100%;
+        position: var(--position);
+        top: 110%;
+        left: 50%;
+        justify-content: space-around;
+        display: inline-flex;
+        transform: translate(-50%, -50%);
+    }
+    
+    .text-box4 {
+        width: 100%;
+        position: var(--position);
+        top: 130%;
+        left: 49%;
+        justify-content: space-around;
+        display: inline-flex;
+        transform: translate(-50%, -50%);
+        border-bottom: 1px solid lightblue;
+        min-height: 20vh;
+    }
+    
+    .text-box5 {
+        width: 100%;
+        position: var(--position);
+        top: 144%;
+        text-align: center;
+    }
+    
+    .buscar {
+        background: white;
+        border: 1px solid gray;
+        width: 230px;
+        height: 32px;
+    }
+    
+    .buton1 {
+        background-color: gray;
+        border: none;
+        color: white;
+        width: 85px;
+        height: 30px;
+        position: relative;
+        right: -95px;
+        top: -43px;
+    }
+    
+    .btn1 {
+        display: inline-block;
+        position: relative;
+        background-color: rgb(98, 98, 98);
+        color: white;
+        border: none;
+        cursor: pointer;
+        height: 32px;
+        width: 80px;
+    }
+    
+    nav .fa {
+        display: none;
+    }
+    
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: var(--position);
+        top: 160%;
+    }
+    
+    .swiper-wrapper {
+        text-align: center;
+    }
+    
+    .swiper-slide img {
+        height: 200px;
+    }
+    
+    .swiper.swiper-wrapper {
+        top: 250%;
+    }
+    
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        color: gray;
+    }
+    
+    .container_footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: var(--position);
+        top: 200%;
+        border-top: 1px solid lightblue;
+        padding-top: 15px;
+    }
+    
+    .footer_menu a {
+        border-right: 1px solid gray;
+        text-decoration: none;
+        justify-content: space-around;
+        align-items: flex-end;
+        color: var(--color);
+        padding: 0px 25px;
+    }
+    
+    .text-box6 {
+        text-align: center;
+        position: var(--position);
+        top: 210%;
+        color: var(--color);
+    }
+    
+    .cont {
+        position: var(--position);
+        width: 100%;
+        top: 160%;
+    }
+    /* ------- Fin Pagina Inicio --------- */
+    /* --------- Pagina Cambalache --------- */
+    
+    .header2 {
+        width: 100%;
+        background-color: whitesmoke;
+        position: relative;
+        background-size: cover;
+        border-bottom: 1px solid lightblue;
+    }
+    
+    .text-box7 {
+        border-bottom: 1px solid lightblue;
+    }
+    
+    .container_footer1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: var(--position);
+        top: 130%;
+        border-top: 1px solid lightblue;
+        padding-top: 15px;
+    }
+    
+    .item-g {
+        position: var(--position);
+        left: 10%;
+    }
+    /* ------- Fin Pagina Cambalache --------- */
+    /* ----- Pagina Login -------- */
+    
+    .header3 {
+        width: 100%;
+        border-bottom: 1px solid lightblue;
+    }
+    
+    .text-box8 {
+        width: 100%;
+        position: var(--position);
+        top: 32.5%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        background-color: whitesmoke;
+        min-height: 18.5vh;
+    }
+    
+    .text-box9 {
+        width: 90%;
+        position: var(--position);
+        top: 61%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    
+    .searc {
+        width: 250px;
+        height: 35px;
+    }
+    
+    .pass {
+        width: 250px;
+        height: 35px;
+    }
+    
+    .icon {
+        background-color: lightgray;
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        text-decoration: none;
+    }
+    
+    .icon1 {
+        background-color: rgb(98, 98, 98);
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        text-decoration: none;
+    }
+    
+    .container_footer2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: var(--position);
+        top: 90%;
+        border-top: 1px solid lightblue;
+        padding-top: 15px;
+    }
+    /* ------ Fin Pagina Login ----------- */
+    /* -------- Pagina de Registro --------- */
+    
+    .text-box10 {
+        width: 90%;
+        position: var(--position);
+        top: 75%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    
+    .uno {
+        width: 225px;
+        height: 30px;
+        margin-top: 80px;
+        margin-right: 25px;
+    }
+    
+    .dos {
+        width: 225px;
+        height: 30px;
+        margin-top: 80px;
+    }
+    
+    .tres {
+        width: 480px;
+        height: 30px;
+        margin-top: 34px;
+    }
+    
+    .cuatro {
+        width: 480px;
+        height: 30px;
+        margin-top: 34px;
+    }
+    
+    .cinco {
+        width: 225px;
+        height: 30px;
+        margin-top: 34px;
+        margin-right: 25px;
+    }
+    
+    .seis {
+        width: 225px;
+        height: 30px;
+        margin-top: 34px;
+    }
+    
+    .siete {
+        width: 225px;
+        height: 30px;
+        margin-top: 37px;
+        margin-right: 25px;
+    }
+    
+    .ocho {
+        width: 225px;
+        height: 30px;
+        margin-top: 37px;
+    }
+    
+    .container_footer3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: var(--position);
+        top: 120%;
+        border-top: 1px solid lightblue;
+        padding-top: 15px;
+    }
+    /* --------- Fin Pagina de Registro ------ */
+    /* ---------- Pagina Crear-Editar Producto ------ */
+    
+    .text-box11 {
+        width: 95%;
+        position: var(--position);
+        top: 78%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    
+    .nueve {
+        width: 225px;
+        height: 30px;
+        margin-right: 200px;
+        margin-top: 25px;
+    }
+    
+    .diez {
+        width: 425px;
+        height: 75px;
+        margin-top: 30px;
+    }
+    
+    .diez::placeholder {
+        position: relative;
+        top: -20px;
+    }
+    
+    .once {
+        width: 425px;
+        height: 30px;
+        margin-top: 30px;
+    }
+    
+    .doce {
+        width: 425px;
+        height: 75px;
+        margin-top: 30px;
+    }
+    
+    .doce::placeholder {
+        position: relative;
+        top: -20px;
+    }
+    
+    .container_footer4 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: var(--position);
+        top: 120%;
+        border-top: 1px solid lightblue;
+        padding-top: 15px;
+    }
+    /* ------- Fin Pagina Crear Producto ------- */
+    /* ------- Pagina Dashboard -------- */
+    
+    .text-box12 {
+        width: 100%;
+        position: var(--position);
+        top: 27%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        border-bottom: 1px solid lightblue;
+    }
+    
+    .button-6 {
+        background-color: rgb(98, 98, 98);
+        color: white;
+        border: none;
+        width: 100px;
+        height: 30px;
+        top: 35%;
+        position: var(--position);
+        left: 20%;
+        transform: translate(-20%, -20%);
+    }
+    
+    .text-box13 {
+        width: 100%;
+        position: var(--position);
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-top: 1px solid lightblue;
+    }
+    
+    .text-box14 {
+        position: var(--position);
+        right: 20%;
+        top: 32%;
+    }
+    
+    .edit {
+        background-color: #649947;
+        border: 1px solid;
+        color: white;
+        text-decoration: none;
+        width: 70px;
+        left: 15%;
+        height: 38px;
+        position: var(--position);
+        cursor: pointer;
+    }
+    
+    .delete {
+        background-color: #f85d56;
+        border: 1px solid;
+        color: white;
+        cursor: pointer;
+        width: 70px;
+        height: 38px;
+        left: 22%;
+        text-decoration: none;
+        position: var(--position);
+    }
+    /* -------- Fin Pagina Dashboard */
+    /* ----- Pagina detalle-producto */
+    
+    .tex {
+        position: var(--position);
+        right: 20%;
+    }
+    
+    .ima {
+        position: var(--position);
+        right: 220%;
+        top: 20%;
+    }
+    
+    .text-box14 {
+        position: var(--position);
+        top: 25%;
+    }
+    
+    .nombre {
+        color: blue;
+        right: 50px;
+        position: absolute;
+        top: 30px;
+    }
+    
+    @media (max-width: 800px) {
+        .nav-links ul li {
+            display: block;
+            padding: 7px;
+            background-color: white;
+            border-bottom: 2px solid lightblue;
+            width: 93%;
+            text-align: center;
+        }
+        .nav-links {
+            position: absolute;
+            height: 100vh;
+            width: 200px;
+            text-align: left;
+            background: lightblue;
+            z-index: 2;
+            top: 0;
+            right: -210px;
+        }
+        .nav-links ul li a {
+            border-right: none;
+            color: var(--color);
+            font-size: 18px;
+        }
+        nav .fa {
+            display: block;
+            color: black;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .nav-links ul {
+            padding: 2px;
+        }
+        .buton1 {
+            position: absolute;
+            top: 27%;
+            display: block;
+            right: 35%;
+        }
+        .text-box3 {
+            position: absolute;
+            width: 300px;
+            top: 134%;
+            display: grid;
+            text-align: center;
+            height: 80%;
+        }
+        .text-box4 {
+            position: absolute;
+            display: grid;
+            top: 155%;
+            text-align: center;
+            height: 78%;
+        }
+        .container {
+            top: 215%;
+        }
+        .text-box5 {
+            top: 200%;
+        }
+        .container_footer {
+            top: 260%;
+        }
+        .text-box8 {
+            top: 250%;
+            text-align: center;
+        }
+        .container_footer1 {
+            top: 245%;
+        }
+        .text-box8 {
+            position: absolute;
+            top: 27%;
+        }
+        .text-box10 {
+            position: absolute;
+            top: 75%;
+        }
+        .uno {
+            margin-right: 4px;
+        }
+        .dos {
+            margin-top: 22px;
+        }
+        .tres {
+            width: 225px;
+        }
+        .cuatro {
+            width: 225px;
+        }
+        .cinco {
+            margin-right: 4px;
+        }
+        .siete {
+            margin-right: 4px;
+            margin-top: 22px;
+        }
+        .ocho {
+            margin-top: 22px;
+        }
+        .container_footer3 {
+            top: 145%;
+        }
+        .nueve {
+            width: 300px;
+            margin-right: 10px;
+        }
+        .diez {
+            width: 300px;
+        }
+        .once {
+            width: 300px;
+        }
+        .doce {
+            width: 300px;
+        }
+        .text-box11 {
+            position: var(--position);
+            top: 65%;
+        }
+        .text-box13 {
+            position: var(--position);
+            width: 100%;
+            top: 100%;
+            text-align: center;
+            height: 80%;
+        }
+        .button-6 {
+            top: 37%;
+        }
+        .container_footer4 {
+            top: 150%;
+        }
+        .delete {
+            left: 60%;
+            position: absolute;
+        }
+        .edit {
+            left: 35%;
+            position: absolute;
+        }
+        .cont {
+            top: 220%;
+        }
+        .item-g {
+            left: 35%;
+        }
+        .nom {
+            position: var(--position);
+            top: -45%;
+            left: 10%;
+        }
+        .ima {
+            left: -10%;
+            top: -82%;
+        }
+        .text-box14 {
+            position: var(--position);
+            top: 44%;
+        }
+    }

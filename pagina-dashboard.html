@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title> Dashboard </title>
+</head>
+
+<body id="table1" onload="verproductos();">
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            if (sessionStorage.getItem("ingreso") == null) {
+                window.location.href = "pagina-login.html";
+            } else {
+
+            }
+            document.getElementById("nombreusuario").innerHTML = sessionStorage.getItem("ingreso");
+
+        });
+    </script>
+    <section class="header2">
+        <nav>
+            <img src="img/cambalache.jpg" alt="imagen">
+            <div class="nav-links" id="navlink">
+                <i class="fa fa-window-close" onclick="hideMenu()"> </i>
+                <ul>
+                    <li><label id="nombreusuario" class="nom"></label> <input type="submit" value="Logout" onclick="handleLogout()" id="logout" class="loguo"></li>
+                    <li><a href="pagina-inicio.html">  Inicio </a></li>
+                    <li><a href="pagina-cambalaches.html"> Cambalaches </a></li>
+                    <li><a href="pagina-login.html"> Ingresar </a></li>
+                </ul>
+                <button class="buton1">Mi Carrito</button>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"> </i>
+        </nav>
+    </section>
+    <section>
+        <div class="text-box12">
+            <h1 style="font-size:25px ;">Dashboard</h1>
+            <p>Bienvenido, aqui podra encontrar el estado actual de sus Cambalaches y sus productos registrados</p>
+        </div>
+    </section>
+    <form action="pagina-crear-editar-producto.html">
+        <button class="button-6"> Nuevo </button>
+    </form>
+    <section>
+        <div class="text-box13">
+            <table class="t">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="authors_table">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script>
+    </script>
+    <section>
+        <footer>
+            <div class="container_footer">
+                <div class="footer_menu">
+                    <a href="#"> Home </a>
+                    <a href="#"> About </a>
+                    <a href="#"> Shop </a>
+                    <a href="#"> Help </a>
+                </div>
+                <div class="text-box6">
+                    <p>&copy;Cambalache.net</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="modal fade" id="DatosIncompletos2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 100%;">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="background-color: gray;height: 300px;">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel2">Datos incompletos</h3>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close" onclick="redireccionar2();">&times;</button>
+                </div>
+                <div class="modal-body" style="width: 100%; height: 100%;">
+                    <h5 id="error2">Debe completar todos los datos para poder continuar.</h5>
+                    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="redireccionar2();">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="DatosIncompletos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 100%;">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="background-color: gray;height: 200px;width: 72%;">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Datos incompletos</h3>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body" style="width: 100%; height: 100%;">
+                    <h5 id="error">Debe completar todos los datos para poder continuar.</h5>
+                    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="deleteproducts(idproduct);">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>
