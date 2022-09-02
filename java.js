@@ -199,6 +199,7 @@
 
  }
 
+ /* ------  Ver productos en dashboard ------ */
  function verproductos() {
      const products = JSON.parse(localStorage.getItem('products'));
      const table = document.getElementById('authors_table');
@@ -217,7 +218,7 @@
      }
  }
 
-
+ /* ----- Ver productos en Cambalache ----- */
  function verproductos2() {
      const productss = JSON.parse(localStorage.getItem('products'));
      const tables = document.getElementById('author_table');
@@ -236,6 +237,7 @@
      }
  }
 
+ /* ----  Pagina Detalle de Producto ----- */
  function detalle_producto(idproduct) {
      let products = JSON.parse(localStorage.getItem("products"))
      for (let i = 0; i < products.length; i++) {
@@ -294,6 +296,9 @@
      }
  }
  detalle_producto(idproduct);
+
+
+ /* ------ Editar, actualizar y eliminar productos ------ */
 
 
  function editproduct(idproduct) {
@@ -402,6 +407,7 @@
 
  /* ------------------ Fin Productos ------------- */
 
+ /* ------- Cerrar Session ------- */
 
  function handleLogout() {
      window.sessionStorage.clear();
